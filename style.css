@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #004165;
+    font-family: 'Brandon Grotesque';
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav li {
+    list-style: none;
+    text-align: center;
+    color: #004165;
+}
