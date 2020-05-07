@@ -1,23 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    color: #004165;
     font-family: 'Brandon Grotesque';
 }
 
 a {
     text-decoration: none;
+    color: #004165;
 }
-
+body{
+    background-image: url(img/bg-page.png);
+}
 nav {
     margin: 25px 0 0;
     display: flex;
     position: absolute;
     align-items: center;
 }
+
 nav img {
     margin-right: 10px;
 }
+
 nav ul {
     display: inline-flex;
 }
@@ -30,24 +34,28 @@ nav li {
     margin: 0 27px;
     font-weight: bold;
 }
-.cont-home{
+
+.cont-home {
     display: flex;
 }
-.tag{
+
+.tag {
     font-size: 17px;
     margin-bottom: 15px;
 }
+
 .home {
     position: relative;
 }
 
-.home h1{
+.home h1 {
     font-size: 66px;
     color: #004165;
     text-transform: uppercase;
     line-height: 66px;
 }
-.home h2{
+
+.home h2 {
     font-size: 20px;
     color: #004165;
     margin: 25px 0 35px;
@@ -55,24 +63,13 @@ nav li {
     font-weight: 100;
 }
 
-h3{
-    font-size: 18px;
-    color: #0094aa;
-    text-align: center;
-    margin: 0 0 35px;
-    text-transform: uppercase;
-}
-.line{
-    background-color: #0094aa;
-    width: 84px;
-    height: 2px;
-    margin: 0 auto 45px;
-}
+
 .tarjetas {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
+
 .tarjeta {
     padding: 30px 25px;
     width: 199px;
@@ -85,15 +82,18 @@ h3{
     transition: all .3s;
     cursor: pointer;
 }
+
 .tarjeta:hover {
     color: #fff;
     background-image: url("img/fondotrajeta2.png");
     transform: translateY(-10px);
 }
+
 .tarjeta .title {
     font-size: 20px;
     max-width: 200px;
 }
+
 .tarjeta:hover .title {
     color: #fff;
 }
@@ -102,13 +102,16 @@ h3{
     margin: 19px 0 32px;
     display: block;
 }
+
 .tarjeta p {
     font-size: 8px;
 
 }
+
 .slider {
     display: flex;
 }
+
 .slide {
     width: 25%;
 }
@@ -152,6 +155,21 @@ h2.header-subtitle {
     margin-top: 45px;
 }
 
+h3.section-undertitle {
+    font-size: 18px;
+    color: #0094aa;
+    text-align: center;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.line {
+    background-color: #0094aa;
+    width: 84px;
+    height: 2px;
+    margin: 0 auto 45px;
+}
+
 p.article-paragraph {
     font-size: 20px;
     text-align: justify;
@@ -159,7 +177,106 @@ p.article-paragraph {
 }
 
 .box-shadow {
-    -webkit-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.27);
-    -moz-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.27);
-    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 10px 10px 40px -10px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 10px 10px 40px -10px rgba(0, 0, 0, 0.27);
+    box-shadow: 10px 10px 40px -10px rgba(0, 0, 0, 0.27);
+}
+
+.carreras {
+    background-image: url(img/bg-carreras.png);
+    background-position: center;
+    padding: 70px 0 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 0 100px;
+}
+
+.testimonios {
+
+}
+
+.testimonio {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+.testimonio .text {
+    max-width: 325px;
+}
+
+.testimonio .text h2 {
+    font-size: 30px;
+    color: #004165;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}
+
+.testimonio .text h3 {
+    font-size: 18px;
+    color: #0094aa;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.testimonio .text .line {
+    background-color: #0094aa;
+    width: 84px;
+    height: 2px;
+    margin: 0 0 25px;
+}
+
+.testimonio p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.eventos {
+
+}
+
+.evento {
+    height: 356px;
+    width: 199px;
+    margin: auto;
+    color: #ffffff;
+    padding: 0 30px;
+    display: flex;
+    place-items: center;
+    box-sizing: border-box;
+}
+.evento p{
+
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.evento.uno {
+    background-image: url(img/event1.png);
+}
+
+.evento.dos {
+    background-image: url(img/event2.png);
+}
+
+.evento.tres {
+    background-image: url(img/event3.png);
+}
+
+.evento.cuatro {
+    background-image: url(img/event4.png);
+}
+.btn-verde{
+    color: #ffffff;
+    background-color: #42c200;
+    margin: auto;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 0;
 }
