@@ -8,6 +8,8 @@
 nav {
     margin: 25px 0 0;
     display: flex;
+    position: absolute;
+    align-items: center;
 }
 nav img {
 
@@ -20,8 +22,9 @@ nav li {
     list-style: none;
     text-align: center;
     color: #004165;
-    font-size: 12px;
-    margin: 0 17px;
+    font-size: 11px;
+    margin: 0 27px;
+    font-weight: bold;
 }
 .cont-home{
     display: flex;
@@ -29,9 +32,15 @@ nav li {
 .tag{
     font-size: 17px;
 }
+.home {
+    position: relative;
+}
+
 .home h1{
     font-size: 66px;
     color: #004165;
+    text-transform: uppercase;
+    line-height: 66px;
 }
 .home h2{
     font-size: 20px;
@@ -85,4 +94,14 @@ h3{
 }
 .slide {
     width: 25%;
+}
+
+.container {
+    max-width: 1182px;
+    margin: auto;
+}
+
+.cont-home .text {
+    padding-top: 165px;
+    min-width: 570px;
 }
