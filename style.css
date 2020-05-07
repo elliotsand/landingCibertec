@@ -71,13 +71,34 @@ h3{
 .tarjetas {
     display: flex;
 }
+.tarjeta {
+    padding: 30px 25px;
+    width: 199px;
+    height: 227px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("img/fondotrajeta1.png");
+}
 .tarjeta.uno {
-    width: 25%;
+    color: #fff;
     background-image: url("img/fondotrajeta2.png");
 }
-.tarjeta {
-    width: 25%;
-    background-image: url("img/fondotrajeta1.png");
+.tarjeta .title {
+    font-size: 20px;
+    max-width: 200px;
+}
+.tarjeta.uno .title {
+    color: #fff;
+}
+
+.tarjeta img {
+    margin: 19px 0 32px;
+    display: block;
+}
+.tarjeta p {
+    font-size: 8px;
+
 }
 .slider {
     display: flex;
