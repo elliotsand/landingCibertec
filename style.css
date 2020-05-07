@@ -70,6 +70,8 @@ h3{
 }
 .tarjetas {
     display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .tarjeta {
     padding: 30px 25px;
@@ -79,16 +81,20 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("img/fondotrajeta1.png");
+    margin: 0 20px;
+    transition: all .3s;
+    cursor: pointer;
 }
-.tarjeta.uno {
+.tarjeta:hover {
     color: #fff;
     background-image: url("img/fondotrajeta2.png");
+    transform: translateY(-10px);
 }
 .tarjeta .title {
     font-size: 20px;
     max-width: 200px;
 }
-.tarjeta.uno .title {
+.tarjeta:hover .title {
     color: #fff;
 }
 
@@ -150,4 +156,10 @@ p.article-paragraph {
     font-size: 20px;
     text-align: justify;
     margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.27);
+    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.27);
 }
