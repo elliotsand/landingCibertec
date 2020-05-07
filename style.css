@@ -5,6 +5,10 @@
     font-family: 'Brandon Grotesque';
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     margin: 25px 0 0;
     display: flex;
@@ -12,7 +16,7 @@ nav {
     align-items: center;
 }
 nav img {
-
+    margin-right: 10px;
 }
 nav ul {
     display: inline-flex;
@@ -111,4 +115,18 @@ h3{
 
 .mt-75 {
     margin-top: 75px !important;
+}
+
+h2.header-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+
+p.article-paragraph {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
 }
