@@ -31,6 +31,7 @@ nav li {
 }
 .tag{
     font-size: 17px;
+    margin-bottom: 15px;
 }
 .home {
     position: relative;
@@ -45,26 +46,11 @@ nav li {
 .home h2{
     font-size: 20px;
     color: #004165;
+    margin: 25px 0 35px;
+    text-align: left;
+    font-weight: 100;
 }
-.home button {
-    display: flex;
-    background-color: #42ea60;
-    border: none;
-    border-radius: 24px;
-    color: #fff;
-    vertical-align: text-bottom;
-    line-height: 56px;
-    padding: 0 20px;
-    font-size: 20px;
 
-}
-h2{
-    font-size: 30px;
-    color: #004165;
-    margin: 0 0 35px;
-    text-align: center;
-    text-transform: uppercase;
-}
 h3{
     font-size: 18px;
     color: #0094aa;
@@ -104,4 +90,25 @@ h3{
 .cont-home .text {
     padding-top: 165px;
     min-width: 570px;
+}
+
+.btn-whatsapp {
+    background-image: url("img/btn-whatsapp.png");
+    width: 296px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.section-title {
+    font-size: 30px;
+    color: #004165;
+    margin: 0 0 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mt-75 {
+    margin-top: 75px !important;
 }
