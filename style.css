@@ -6,9 +6,12 @@
 }
 
 nav {
+    margin: 25px 0 0;
     display: flex;
 }
+nav img {
 
+}
 nav ul {
     display: inline-flex;
 }
@@ -17,4 +20,69 @@ nav li {
     list-style: none;
     text-align: center;
     color: #004165;
+    font-size: 12px;
+    margin: 0 17px;
+}
+.cont-home{
+    display: flex;
+}
+.tag{
+    font-size: 17px;
+}
+.home h1{
+    font-size: 66px;
+    color: #004165;
+}
+.home h2{
+    font-size: 20px;
+    color: #004165;
+}
+.home button {
+    display: flex;
+    background-color: #42ea60;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    vertical-align: text-bottom;
+    line-height: 56px;
+    padding: 0 20px;
+    font-size: 20px;
+
+}
+h2{
+    font-size: 30px;
+    color: #004165;
+    margin: 0 0 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 18px;
+    color: #0094aa;
+    text-align: center;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+}
+.line{
+    background-color: #0094aa;
+    width: 84px;
+    height: 2px;
+    margin: 0 auto 45px;
+}
+.tarjetas {
+    display: flex;
+}
+.tarjeta.uno {
+    width: 25%;
+    background-image: url("img/fondotrajeta2.png");
+}
+.tarjeta {
+    width: 25%;
+    background-image: url("img/fondotrajeta1.png");
+}
+.slider {
+    display: flex;
+}
+.slide {
+    width: 25%;
 }
