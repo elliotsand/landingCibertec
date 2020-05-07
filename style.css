@@ -81,14 +81,19 @@ nav li {
 .tarjeta {
     padding: 30px 25px;
     width: 199px;
-    height: 227px;
+    min-height: 227px;
     box-sizing: border-box;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center right;
     background-image: url("img/fondotrajeta1.png");
     margin: 0 20px;
     transition: all .3s;
     cursor: pointer;
+    border-radius: 8px;
+}
+.tarjeta.alianza{
+    width: 50%;
 }
 
 .tarjeta:hover {
@@ -101,6 +106,12 @@ nav li {
 .tarjeta .title {
     font-size: 20px;
     max-width: 200px;
+    color: #014164;
+}
+
+.tarjeta.alianza .title {
+    max-width: 100%;
+
 }
 
 .tarjeta:hover .title {
@@ -479,7 +490,22 @@ fieldset input::-webkit-input-placeholder {
     margin: 15px 0;
     font-size: 11px;
 }
-
+.sedes{
+    color: #004165;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+}
+.beneficios p{
+    color: #014164;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+.beneficios h4{
+    font-size: 25px;
+    color: #014164;
+    margin-bottom: 10px;
+}
 @media screen and (max-width: 1024px) {
     .mobile-column-center {
         padding-left: 30px;
