@@ -45,7 +45,7 @@
 <section class="container">
   <div class="forma-2"></div>
   <h2 class="section-title mt-75">¿Por qué elegirnos?</h2>
-  <h3 class="section-undertitle">>AVANCEMOS JUNTOS</h3>
+  <h3 class="section-undertitle">AVANCEMOS JUNTOS</h3>
   <div class="line"></div>
   <div class="tarjetas mobile-column-center">
     <div class="tarjeta box-shadow mobile-width-85 mobile-mb-50">
@@ -113,7 +113,7 @@
     </div>
   </div>
 </section>
-<section class="container">
+<section class="container ">
 
   <div class=" testimonios">
     <div>
@@ -338,7 +338,7 @@
   </div>
   <a class="btn-verde">Inscríbete aquí</a>
 </section>
-<section class=" formulario">
+<section class=" formulario mt-75">
   <div class="cont-form">
   <h4 class="title-form">Solicita más información e inscríbete aquí </h4>
   <form >
@@ -379,8 +379,9 @@
   </form>
   </div>
 </section>
-
-
+<div class="container copy">
+<p>© 2020 — Cibertec. All Rights Reserved.</p>
+</div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick.js"></script>
@@ -391,7 +392,32 @@
             infinite: true,
             slidesToShow: 4,
             dots: true,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
         $('.testimonios').slick({
             infinite: true,
@@ -403,7 +429,30 @@
             infinite: true,
             slidesToShow: 4,
             dots: true,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     });
 </script>

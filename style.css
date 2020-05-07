@@ -45,6 +45,7 @@ nav li {
 .tag {
     font-size: 17px;
     margin-bottom: 15px;
+    color: #004165;
 }
 
 .home {
@@ -64,6 +65,10 @@ nav li {
     margin: 25px 0 35px;
     text-align: left;
     font-weight: 100;
+}
+
+.home .cont-home img{
+    max-width: 50%;
 }
 
 
@@ -138,6 +143,7 @@ nav li {
     padding: 0;
     border: none;
     cursor: pointer;
+    border-radius: 30px;
 }
 
 .section-title {
@@ -195,7 +201,11 @@ p.article-paragraph {
     background-size: contain;
     margin: 0 0 100px;
 }
-
+.carrera img{
+    display: block;
+    margin: auto;
+    width: 95%;
+}
 .testimonios {
 
 }
@@ -315,7 +325,7 @@ p.article-paragraph {
     left: 340px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     .mobile-column-center {
         padding-left: 30px;
         padding-right: 30px;
@@ -350,6 +360,13 @@ p.article-paragraph {
 
     .mobile-mb-25 {
         margin-bottom: 25px;
+    }
+    .forma-1 {
+       display: none;
+    }
+
+    .forma-2 {
+        display: none;
     }
 }
 
@@ -457,5 +474,89 @@ fieldset input::-webkit-input-placeholder {
     font-size: 9px
 }
 
+.copy p {
+    color: #004165;
+    margin: 15px 0;
+    font-size: 11px;
+}
 
+@media screen and (max-width: 1024px) {
+    .mobile-column-center {
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .mobile-width-100 {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .mobile-width-85 {
+        width: 85% !important;
+        min-width: 85% !important;
+        max-width: 85% !important;
+    }
+
+    .mobile-text-centered {
+        text-align: center !important;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-mb-50 {
+        margin-bottom: 50px;
+    }
+
+    .mobile-mb-25 {
+        margin-bottom: 25px;
+    }
+    .forma-1 {
+        display: none;
+    }
+
+    .forma-2 {
+        display: none;
+    }
+    nav li{
+        margin: 0 13px;
+    }
+    .home h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .home h2{
+        text-align: center;
+    }
+    .testimonio{
+        display: block;
+    }
+    .testimonio img {
+        display: block;
+        margin: auto;
+        max-width: 70%;
+    }
+    .carreras{
+        width: 85%;
+        margin: auto;
+    }
+    .testimonios{
+        width: 85%;
+        margin: auto;
+    }
+    .eventos{
+        width: 85%;
+        margin: auto;
+    }
+    .cont-form{
+        width: 90%;
+    }
+    fieldset{
+        width: 100%;
+    }
+}
