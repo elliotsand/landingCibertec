@@ -404,6 +404,10 @@ p.article-paragraph {
 }
 
 @media screen and (max-width: 1024px) {
+    .main-mobile-image {
+        max-width: calc(100% + 60px);
+    }
+
     .mobile-padding {
         padding: 30px;
     }
