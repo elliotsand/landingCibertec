@@ -564,6 +564,10 @@ fieldset input, fieldset select {
     display: block;
 }
 
+fieldset select option {
+    color: black !important;
+}
+
 fieldset input::-webkit-input-placeholder {
     color: white;
 }
