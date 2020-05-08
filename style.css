@@ -396,6 +396,26 @@ p.article-paragraph {
 }
 
 @media screen and (max-width: 1024px) {
+    .evento {
+        text-align: center;
+    }
+
+    .tarjeta {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 300px;
+        width: 300px;
+        min-height: 172px;
+        position: relative;
+    }
+
+    .tarjeta p {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+
     .mobile-column-center {
         padding-left: 30px;
         padding-right: 30px;
@@ -576,6 +596,16 @@ fieldset input::-webkit-input-placeholder {
 }
 
 @media screen and (max-width: 1024px) {
+    .mobile-padding-top-210 {
+        padding-top: 210px !important;
+    }
+
+    .mobile-box-shadow {
+        -webkit-box-shadow: 10px 10px 40px -10px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 10px 10px 40px -10px rgba(0, 0, 0, 0.27);
+        box-shadow: 10px 10px 40px -10px rgba(0, 0, 0, 0.27);
+    }
+
     .mobile-column-center {
         padding-left: 30px;
         padding-right: 30px;
@@ -670,4 +700,10 @@ fieldset input::-webkit-input-placeholder {
 .max-width-500 {
     max-width: 500px;
     margin: auto;
+}
+
+.mobile-card {
+    padding: 21px;
+    background-color: white;
+    border-radius: 30px;
 }
