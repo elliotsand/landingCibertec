@@ -370,6 +370,25 @@ p.article-paragraph {
     font-size: 16px;
     padding: 14px 0;
 }
+.btn-verde.variacion {
+    color: #ffffff;
+    background-color: #0750a1;
+    margin: auto;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 0;
+}
+
+.btn-verde:hover {
+    background-color: #0750a1;
+}
+.btn-verde.variacion:hover {
+    background-color: #42c200;
+}
 .puntos {
     background-image: url(img/forma-puntos.png);
     width: 136px;
@@ -510,6 +529,12 @@ p.article-paragraph {
     background-size: cover;
     background-position: center;
 }
+.cont-form.datos {
+    display: none;
+}
+.cont-form.consultor {
+    display: block;
+}
 
 fieldset {
     display: inline-block;
@@ -532,6 +557,16 @@ fieldset input, fieldset select {
 
 fieldset input::-webkit-input-placeholder {
     color: white;
+}
+.text-resultado {
+    text-align: center;
+    margin: 30px auto 29px;
+    font-size: 18px;
+    color: #0750a1;
+    font-weight: bold;
+}
+.text-resultado span {
+    font-size: 25px;
 }
 
 .round {
