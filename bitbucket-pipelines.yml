@@ -30,7 +30,7 @@ pipelines:
     master:
       - step: *AWS-S3_Deploy
 
-  custom:.
+  custom:
     deploy-to-prod:
       - step:
           <<: *AWS-S3_Deploy
