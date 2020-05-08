@@ -486,9 +486,9 @@ p.article-paragraph {
     }
 
     .mobile-width-85 {
-        width: 85% !important;
-        min-width: 85% !important;
-        max-width: 85% !important;
+        width: 95% !important;
+        min-width: 95% !important;
+        max-width: 95% !important;
     }
 
     .mobile-text-centered {
@@ -542,12 +542,8 @@ p.article-paragraph {
     background-size: cover;
     background-position: center;
 }
-.cont-form.datos {
-    display: none;
-}
-.cont-form.consultor {
-    display: block;
-}
+
+
 
 fieldset {
     display: inline-block;
@@ -681,6 +677,10 @@ fieldset input::-webkit-input-placeholder {
 }
 
 @media screen and (max-width: 1024px) {
+    .copy p {
+        text-align: center;
+    }
+
     .mobile-card {
         padding: 21px;
         background-color: white;
@@ -712,9 +712,9 @@ fieldset input::-webkit-input-placeholder {
     }
 
     .mobile-width-85 {
-        width: 85% !important;
-        min-width: 85% !important;
-        max-width: 85% !important;
+        width: 95% !important;
+        min-width: 95% !important;
+        max-width: 95% !important;
     }
 
     .mobile-text-centered {
@@ -745,9 +745,10 @@ fieldset input::-webkit-input-placeholder {
         margin: 0 13px;
     }
 
-    .home h1 {
+    .home h1, .home h1.internas {
         text-align: center;
-        font-size: 50px;
+        font-size: 45px;
+        line-height: 48px;
     }
 
     .home h2 {
@@ -791,4 +792,14 @@ fieldset input::-webkit-input-placeholder {
 .max-width-500 {
     max-width: 700px;
     margin: auto !important;
+}
+
+.round-padding {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.hidden {
+    display: none;
 }
