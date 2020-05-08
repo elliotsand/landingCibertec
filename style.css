@@ -1,7 +1,16 @@
+
+@font-face {
+    font-family: 'BrandonGrotesque-Regular';
+    src: url('fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/BrandonGrotesque-Regular.otf')  format('opentype'),
+    url('fonts/BrandonGrotesque-Regular.woff') format('woff'), url('fonts/BrandonGrotesque-Regular.ttf')  format('truetype'), url('fonts/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Brandon Grotesque';
+    font-family: 'BrandonGrotesque-Regular';
     box-sizing: border-box;
 }
 
