@@ -221,6 +221,7 @@ p.article-paragraph {
     overflow: hidden;
     width: 95%;
     margin: auto;
+    max-height: 260px;
 }
 
 .carrera .cover {
