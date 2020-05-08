@@ -563,6 +563,9 @@ fieldset input, fieldset select {
     border: 1px solid #fff;
     margin: 0 auto 30px;
     display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 fieldset select option {
@@ -586,8 +589,13 @@ fieldset input::-webkit-input-placeholder {
     padding: 15px 30px;
     border-radius: 30px;
 }
+
 .text-resultado span {
     font-size: 25px;
+}
+
+.text-resultado h3 {
+    color: white;
 }
 
 .round {
@@ -808,4 +816,10 @@ fieldset input::-webkit-input-placeholder {
 
 .hidden {
     display: none;
+}
+
+.text-centered {
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
 }
