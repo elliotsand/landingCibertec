@@ -78,7 +78,7 @@
     </div>
   </div>
 </section>
-<section class="mobile-padding">
+<section >
   <h2 class="section-title mt-75">nuestras escuelas</h2>
   <h3 class="section-undertitle">NO TE DETENGAS</h3>
   <div class="line"></div>
@@ -439,7 +439,9 @@
         $('.carreras').slick({
             infinite: true,
             slidesToShow: 4,
+            centerMode: true,
             dots: true,
+            arrows: false,
             slidesToScroll: 1,
             responsive: [
                 {
@@ -454,6 +456,7 @@
                 {
                     breakpoint: 1024,
                     settings: {
+                        centerMode: true,
                         slidesToShow: 2,
                         slidesToScroll: 1
                     }
@@ -461,6 +464,7 @@
                 {
                     breakpoint: 600,
                     settings: {
+                        centerMode: true,
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }
@@ -489,6 +493,7 @@
                 {
                     breakpoint: 480,
                     settings: {
+                        dots:false,
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }

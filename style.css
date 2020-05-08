@@ -369,7 +369,7 @@ p.article-paragraph {
 .btn-verde {
     color: #ffffff;
     background-color: #42c200;
-    margin: auto;
+    margin: 20px auto 20px;
     border: none;
     border-radius: 30px;
     display: block;
@@ -752,6 +752,7 @@ fieldset input::-webkit-input-placeholder {
 
     .home h2 {
         text-align: center;
+        margin:  30px auto;
     }
 
     .testimonio {
@@ -765,7 +766,6 @@ fieldset input::-webkit-input-placeholder {
     }
 
     .carreras {
-        width: 85%;
         margin: auto;
     }
 
