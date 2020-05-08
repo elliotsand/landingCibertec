@@ -596,6 +596,12 @@ fieldset input::-webkit-input-placeholder {
 }
 
 @media screen and (max-width: 1024px) {
+    .mobile-card {
+        padding: 21px;
+        background-color: white;
+        border-radius: 30px;
+    }
+
     .mobile-padding-top-210 {
         padding-top: 210px !important;
     }
@@ -700,10 +706,4 @@ fieldset input::-webkit-input-placeholder {
 .max-width-500 {
     max-width: 500px;
     margin: auto;
-}
-
-.mobile-card {
-    padding: 21px;
-    background-color: white;
-    border-radius: 30px;
 }
