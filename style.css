@@ -244,7 +244,8 @@ p.article-paragraph {
     padding: 70px 0 100px;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 0 0 100px;
+    width: 94%;
+    margin: 0 auto 100px;
 }
 
 .carrera {
@@ -772,6 +773,7 @@ fieldset input::-webkit-input-placeholder {
 
     .carreras {
         margin: auto;
+        width: 100%;
     }
 
     .testimonios {
