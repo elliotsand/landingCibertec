@@ -76,10 +76,12 @@ nav li {
     font-weight: 100;
 }
 
-.home .cont-home img {
-    max-width: 50%;
+.main-image {
+    max-width: 591px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
-
 
 .tarjetas {
     display: flex;
@@ -395,7 +397,21 @@ p.article-paragraph {
     left: 340px;
 }
 
+@media screen and (min-width: 1024px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px) {
+    .mobile-padding {
+        padding: 30px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
     .evento {
         text-align: center;
     }
