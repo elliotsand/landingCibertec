@@ -377,27 +377,27 @@
             <h4 class="title-form">Necesitamos tus datos para simular tu mensualidad.</h4>
 
             <fieldset>
-                <input type="text" placeholder="Nombre" name="nombre">
+                <input type="text" placeholder="Nombre" name="PrimerNombre">
             </fieldset>
             <fieldset>
-                <input type="text" placeholder="Apellido" name="apellido">
+                <input type="text" placeholder="Apellido" name="ApellidoPaterno">
             </fieldset>
             <fieldset>
-                <input type="text" placeholder="Celular" name="celular">
+                <input type="text" placeholder="Celular" name="TelefonoMovil">
             </fieldset>
             <fieldset>
-                <input type="text" placeholder="E-mail" name="email">
+                <input type="text" placeholder="E-mail" name="CorreoElectronico">
             </fieldset>
             <fieldset>
-                <input type="text" placeholder="DNI" name="Carrera de interés">
+                <input type="text" placeholder="DNI" name="NumeroDocumento">
             </fieldset>
             <fieldset>
-                <select name="sede">
+                <select name="carrerainteres">
                     <option value="">Carrera de interés*</option>
                 </select>
             </fieldset>
             <fieldset>
-                <select name="sede">
+                <select name="sedeinteres">
                     <option value="">Sede</option>
                 </select>
             </fieldset>
@@ -413,6 +413,9 @@
     <div class="cont-form consultor">
         <h4 class="title-form">Solicita más información e inscríbete aquí </h4>
         <form class="form-consultor">
+            <div class="errores">
+
+            </div>
             <fieldset>
                 <select name="carrerainteres" id="carrerasCibertec">
                     <option value="" disabled="" selected="">Selecciona una Carrera</option>
@@ -519,7 +522,32 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.form-datos, .form-consultor').on('submit', event => event.preventDefault());
+        $('.form-consultor, .form-datos').on('submit', event => event.preventDefault());
+
+        $('#btn-datos').on('click', function (event) {
+            event.preventDefault();
+
+            const payload = {
+                PrimerNombre: $('input[name=PrimerNombre]').val(),
+                ApellidoPaterno: $('input[name=ApellidoPaterno]').val(),
+                TelefonoMovil: $('input[name=TelefonoMovil]').val(),
+                CorreoElectronico: $('input[name=CorreoElectronico]').val(),
+                NumeroDocumento: $('input[name=NumeroDocumento]').val(),
+                carrerainteres: $('input[name=carrerainteres]').val(),
+                sedeinteres: $('input[name=sedeinteres]').val(),
+            };
+
+            const url = 'https://www.cibertec.edu.pe/landing-ciclo-2020-2/#wpcf7-f5077-o1';
+
+            fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(payload)
+            }).then(res => {
+                $('.errores').html(res);
+                console.log(res);
+            });
+        })
+
 
         $('#btn-simular').click(function () {
             $('.consultor').addClass('hidden');
@@ -527,8 +555,8 @@
         });
 
         $('#btn-datos').click(function () {
-            $('.text-resultado').removeClass('hidden');
-            $('.form-datos').addClass('hidden');
+            //$('.text-resultado').removeClass('hidden');
+            //$('.form-datos').addClass('hidden');
         })
 
         $('.carreras').slick({
