@@ -73,6 +73,7 @@ nav li {
     color: #004165;
     margin: 25px 0 35px;
     text-align: left;
+    max-width: 600px;
     font-weight: 100;
 }
 
@@ -369,7 +370,14 @@ p.article-paragraph {
     font-size: 16px;
     padding: 14px 0;
 }
-
+.puntos {
+    background-image: url(img/forma-puntos.png);
+    width: 136px;
+    height: 115px;
+    position: absolute;
+    top: 175px;
+    left: 0;
+}
 .forma-1 {
     background-image: url("img/forma1.png");
     width: 136px;
@@ -475,8 +483,10 @@ p.article-paragraph {
     .forma-1 {
         display: none;
     }
-
     .forma-2 {
+        display: none;
+    }
+    .puntos {
         display: none;
     }
 }
