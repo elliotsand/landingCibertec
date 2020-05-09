@@ -38,6 +38,8 @@
         ¿Quiénes somos?
         <span class="puntos"></span>
       </h1>
+
+      <a class="btn-verde home" id="scrollDownBttn">Inscríbete aquí</a>
       <h2 class=" round-padding">
         Brindamos una educación de calidad ofreciendo un servicio integral de formación y capacitación
         profesional en
@@ -347,6 +349,11 @@
                     }
                 }
             ]
+        });
+        $("#scrollDownBttn").click(function(){
+            $('html, body').animate({
+                scrollTop: $(".formulario").offset().top
+            }, 500);
         });
     });
 </script>

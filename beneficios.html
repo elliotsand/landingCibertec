@@ -40,8 +40,7 @@
         <span class="puntos"></span>
       </h1>
 
-      <h2>Contacta con nuestro asesor y matricúlate por WhatsApp.</h2>
-      <a href="#" class="btn-whatsapp"></a>
+      <a class="btn-verde home" id="scrollDownBttn">Inscríbete aquí</a>
     </div>
     <img class="mobile-only main-mobile-image" src="img/beneficios-m.png" alt="">
   </div>
@@ -330,7 +329,7 @@
             data = $(this).attr('data');
             $('.toogle').removeClass('active');
             $(this).addClass('active');
-            switch(data) {
+            switch (data) {
                 case 'uno':
                     $('.exp').addClass('heightCero');
                     $('.exp.uno').removeClass('heightCero');
@@ -344,6 +343,11 @@
                     $('.exp.tres').removeClass('heightCero');
                     break;
             }
+        });
+        $("#scrollDownBttn").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".formulario").offset().top
+            }, 500);
         });
     });
 </script>

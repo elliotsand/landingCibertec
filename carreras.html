@@ -39,9 +39,7 @@
                 NUESTRAS Carreras
                 <span class="puntos"></span>
             </h1>
-            <h2>Contacta con nuestro asesor y matricúlate por WhatsApp.</h2>
-
-            <a href="#" class="btn-whatsapp"></a>
+            <a class="btn-verde home" id="scrollDownBttn">Inscríbete aquí</a>
         </div>
         <img class="mobile-only main-mobile-image" src="img/ncarreras-m.png" alt="">
     </div>
@@ -631,6 +629,11 @@
                     }
                 }
             ]
+        });
+        $("#scrollDownBttn").click(function(){
+            $('html, body').animate({
+                scrollTop: $(".formulario").offset().top
+            }, 500);
         });
     });
 </script>

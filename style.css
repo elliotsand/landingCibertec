@@ -63,9 +63,9 @@ nav li {
 }
 
 .tag {
-    font-size: 17px;
+    font-size: 23px;
     margin-bottom: 15px;
-    color: #004165;
+    color: #42c200;
 }
 
 .home {
@@ -434,6 +434,14 @@ p.article-paragraph {
     width: 150px;
     text-align: center;
     font-size: 16px;
+    padding: 14px 0;
+    cursor: pointer;
+}
+.btn-verde.home{
+    margin: 20px 40px 20px;
+    width: 250px;
+    text-align: center;
+    font-size: 27px;
     padding: 14px 0;
 }
 

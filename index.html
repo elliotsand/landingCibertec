@@ -296,7 +296,7 @@
             </div>
         </div>
     </div>
-    <a class="btn-verde">Inscríbete aquí</a>
+    <a class="btn-verde" id="scrollDownBttn">Inscríbete aquí</a>
 </section>
 <section class="formulario mt-75">
     <div class="cont-form datos hidden">
@@ -561,6 +561,11 @@
                     }
                 }
             ]
+        });
+        $("#scrollDownBttn").click(function(){
+            $('html, body').animate({
+                scrollTop: $(".formulario").offset().top
+            }, 500);
         });
     });
 </script>
