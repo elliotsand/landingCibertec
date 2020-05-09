@@ -1,8 +1,7 @@
-
 @font-face {
     font-family: 'BrandonGrotesque-Regular';
-    src: url('fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/BrandonGrotesque-Regular.otf')  format('opentype'),
-    url('fonts/BrandonGrotesque-Regular.woff') format('woff'), url('fonts/BrandonGrotesque-Regular.ttf')  format('truetype'), url('fonts/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
+    src: url('fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/BrandonGrotesque-Regular.otf') format('opentype'),
+    url('fonts/BrandonGrotesque-Regular.woff') format('woff'), url('fonts/BrandonGrotesque-Regular.ttf') format('truetype'), url('fonts/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -80,7 +79,7 @@ nav li {
 .home h2 {
     font-size: 20px;
     color: #004165;
-    margin: 25px 0 35px;
+    margin: 25px 0 20px;
     text-align: left;
     max-width: 600px;
     font-weight: 100;
@@ -250,7 +249,7 @@ p.article-paragraph {
 
 .carrera {
     position: relative;
-    border-radius: 15px ;
+    border-radius: 15px;
     overflow: hidden;
     width: 95%;
     margin: auto;
@@ -276,6 +275,7 @@ p.article-paragraph {
     line-height: 17px;
     font-size: 20px;
 }
+
 .carrera .icon-x {
     position: absolute;
     left: 19px;
@@ -310,6 +310,7 @@ p.article-paragraph {
     margin: 0 0 20px;
     text-transform: uppercase;
 }
+
 .testimonio .text h2.subtitle {
     font-size: 23px;
     color: #004165;
@@ -386,6 +387,7 @@ p.article-paragraph {
     font-size: 16px;
     padding: 14px 0;
 }
+
 .btn-verde.variacion {
     color: #ffffff;
     background-color: #0750a1;
@@ -402,9 +404,11 @@ p.article-paragraph {
 .btn-verde:hover {
     background-color: #0750a1;
 }
+
 .btn-verde.variacion:hover {
     background-color: #42c200;
 }
+
 .puntos {
     background-image: url(img/forma-puntos.png);
     width: 136px;
@@ -413,6 +417,7 @@ p.article-paragraph {
     top: 8px;
     left: -150px;
 }
+
 .forma-1 {
     background-image: url("img/forma1.png");
     width: 136px;
@@ -518,9 +523,11 @@ p.article-paragraph {
     .forma-1 {
         display: none;
     }
+
     .forma-2 {
         display: none;
     }
+
     .puntos {
         display: none;
     }
@@ -552,7 +559,6 @@ p.article-paragraph {
 }
 
 
-
 fieldset {
     display: inline-block;
     width: 49%;
@@ -582,6 +588,7 @@ fieldset select option {
 fieldset input::-webkit-input-placeholder {
     color: white;
 }
+
 .text-resultado {
     text-align: center;
     margin: 0 auto 29px;
@@ -773,7 +780,7 @@ fieldset input::-webkit-input-placeholder {
 
     .home h2 {
         text-align: center;
-        margin:  30px auto;
+        margin: 30px auto;
     }
 
     .testimonio {
@@ -819,6 +826,15 @@ fieldset input::-webkit-input-placeholder {
     padding: 30px;
     border-radius: 30px;
     background-color: white;
+}
+
+ul.round-padding {
+    font-size: 20px;
+    color: #004165;
+    text-align: left;
+    max-width: 600px;
+    font-weight: 100;
+    margin: 0 40px;
 }
 
 .hidden {
