@@ -42,7 +42,7 @@
 
             <button class="btn-whatsapp"></button>
         </div>
-        <img class="mobile-only main-mobile-image" src="img/home.png" alt="">
+        <img class="mobile-only main-mobile-image" src="img/clases-online-m.png" alt="">
     </div>
 </section>
 <section class="container">
@@ -219,145 +219,80 @@
         <div>
             <div class="evento uno">
                 <p>
-                    <b>¿Cómo generar
+                    <b class="title">¿Cómo generar
                         ingresos
                         desde mi casa?</b>
-                    <br>
-                    <br>
-                    Fecha: 13 mayo
-                    Hora: 5 p.m.
-                    <br>
-                    <br>
-                    Plataforma:
-                    Microsoft Teams</p>
+
+                  <span class="ponente">
+
+                  </span>
+                    <span class="fecha"> Fecha: 13 mayo <br>
+                    Hora: 5 p.m. </span>
+
+                    <span class="plataforma"> Plataforma:
+                    Microsoft Teams</span></p>
             </div>
         </div>
         <div>
             <div class="evento dos">
                 <p>
-                    <b>Descubriendo
+                    <b class="title">Descubriendo
                         mi Vocación</b>
-                    <br>
-                    <br>
-                    Fecha: 13 mayo
-                    Hora: 7 p.m.
-                    <br>
-                    <br>
-                    Plataforma:
-                    Microsoft Teams</p>
+
+                  <span class="ponente"></span>
+                    <span class="fecha">
+                        Fecha: 13 mayo <br>
+                        Hora: 7 p.m.
+                    </span>
+                    <span class="plataforma">Plataforma:
+                    Microsoft Teams</span></p>
             </div>
         </div>
         <div>
             <div class="evento tres">
                 <p>
-                    <b>Big Data: ¿Cómo
-                        crear reportes
-                        interactivos
-                        con herramientas
-                        Power BI?</b>
-                    <br>
-                    <br>
+                  <b class="title">Big Data: ¿Cómo
+                    crear reportes
+                    interactivos
+                    con herramientas
+                    Power BI?</b>
+                  <span class="ponente">
                     Ponente:
                     Raúl Sarachaga,
                     experto Microsoft
-                    Fecha: 13 mayo
+                    </span>
+                  <span class="fecha">
+                    Fecha: 13 mayo<br>
                     Hora: 7 p.m.
-                    <br>
-                    <br>
+                   </span>
+                  <span class="plataforma">
                     Plataforma:
-                    Microsoft Teams</p>
+                    Microsoft Teams</span></p>
             </div>
         </div>
         <div>
-            <div class="evento cuatro">
-                <p>
-                    <b>Consumidores más
-                        humanos: ¿Cómo la
-                        crisis cambiará los
-                        hábitos de consumo
-                        de las personas?</b>
-                    <br>
-                    <br>
-                    Ponente:
-                    Juan Carlos Campero
-                    Fecha: 13 mayo
+          <div class="evento cuatro">
+            <p>
+              <b class="title">Consumidores más
+                humanos: ¿Cómo la
+                crisis cambiará los
+                hábitos de consumo
+                de las personas?</b>
+
+              <span class="ponente">
+                  Ponente:
+                  Juan Carlos Campero
+              </span>
+
+              <span class="fecha">
+                    Fecha: 13 mayo  <br>
                     Hora: 7 p.m.
-                    <br>
-                    <br>
+               </span>
+              <span class="plataforma">
                     Plataforma:
-                    Microsoft Teams</p>
-            </div>
-        </div>
-        <div>
-            <div class="evento uno">
-                <p>
-                    <b>¿Cómo generar
-                        ingresos
-                        desde mi casa?</b>
-                    <br>
-                    <br>
-                    Fecha: 13 mayo
-                    Hora: 5 p.m.
-                    <br>
-                    <br>
-                    Plataforma:
-                    Microsoft Teams</p>
-            </div>
-        </div>
-        <div>
-            <div class="evento dos">
-                <p>
-                    <b>Descubriendo
-                        mi Vocación</b>
-                    <br>
-                    <br>
-                    Fecha: 13 mayo
-                    Hora: 7 p.m.
-                    <br>
-                    <br>
-                    Plataforma:
-                    Microsoft Teams</p>
-            </div>
-        </div>
-        <div>
-            <div class="evento tres">
-                <p>
-                    <b>Big Data: ¿Cómo
-                        crear reportes
-                        interactivos
-                        con herramientas
-                        Power BI?</b>
-                    <br>
-                    <br>
-                    Ponente:
-                    Raúl Sarachaga,
-                    experto Microsoft
-                    Fecha: 13 mayo
-                    Hora: 7 p.m.
-                    <br>
-                    <br>
-                    Plataforma:
-                    Microsoft Teams</p>
-            </div>
-        </div>
-        <div>
-            <div class="evento cuatro">
-                <p>
-                    <b>Consumidores más
-                        humanos: ¿Cómo la
-                        crisis cambiará los
-                        hábitos de consumo
-                        de las personas?</b>
-                    <br>
-                    <br>
-                    Ponente:
-                    Juan Carlos Campero
-                    Fecha: 13 mayo
-                    Hora: 7 p.m.
-                    <br>
-                    <br>
-                    Plataforma:
-                    Microsoft Teams</p>
+                    Microsoft Teams
+              </span>
+            </p>
             </div>
         </div>
     </div>
@@ -566,6 +501,7 @@
             slidesToShow  : 4,
             dots          : true,
             slidesToScroll: 1,
+            autoplay:true,
             responsive    : [
                 {
                     breakpoint: 1600,
@@ -599,12 +535,14 @@
             infinite      : true,
             slidesToShow  : 1,
             slidesToScroll: 1,
+            autoplay:true,
             dots          : true
         });
         $('.eventos').slick({
             infinite      : true,
             slidesToShow  : 4,
             dots          : true,
+            autoplay:true,
             slidesToScroll: 1,
             responsive    : [
                 {

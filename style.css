@@ -253,7 +253,7 @@ p.article-paragraph {
     overflow: hidden;
     width: 95%;
     margin: auto;
-    max-height: 230px;
+    height: 230px;
 }
 
 .carrera .cover {
@@ -271,22 +271,27 @@ p.article-paragraph {
     color: #fff;
     position: absolute;
     left: 19px;
-    bottom: 15px;
-    line-height: 17px;
-    font-size: 20px;
+    max-width: 210px;
+    top: 166px;
+    line-height: 20px;
+    font-size: 23px;
 }
 
 .carrera .icon-x {
     position: absolute;
     left: 19px;
-    bottom: 55px;
-    width: 20px;
+    top: 140px;
+    height: 15px;
+    width: 15px;
 }
 
 .carrera img {
     display: block;
     margin: auto;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .testimonios {
@@ -343,20 +348,51 @@ p.article-paragraph {
 
 .evento {
     height: 356px;
-    width: 199px;
+    width: 250px;
+    background-size: cover;
     margin: auto;
     color: #ffffff;
-    padding: 0 30px;
+    padding: 0 25px;
     display: flex;
     place-items: center;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
-.evento p {
-
+.evento .title {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
     box-sizing: border-box;
+    margin: 0 0 20px;
+    font-weight: bold;
+    display: block;
+    min-height: 30px;
+}
+
+.evento .ponente {
+    color: #ffffff;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 0 0 18px;
+    display: block;
+    font-weight: lighter;
+}
+
+.evento .fecha {
+    color: #ffffff;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 0 0 18px;
+    display: block;
+    font-weight: lighter;
+}
+
+.evento .plataforma {
+    color: #ffffff;
+    font-size: 15px;
+    box-sizing: border-box;
+    display: block;
+    font-weight: lighter;
 }
 
 .evento.uno {
@@ -453,7 +489,7 @@ p.article-paragraph {
 
 @media screen and (max-width: 1024px) {
     .main-mobile-image {
-        max-width: calc(100% + 60px);
+        max-width: 90%;
     }
 
     .mobile-padding {
@@ -845,4 +881,46 @@ ul.round-padding {
     text-align: center;
     text-transform: uppercase;
     justify-content: center;
+}
+
+.toogle {
+    border: 1px solid #0094aa;
+    border-radius: 22px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.toogle h3 {
+    margin: 12px 0 !important;
+}
+
+.toogle .icon {
+    display: inline;
+    position: absolute;
+    top: 4px;
+    right: 30px;
+    font-weight: 900;
+    font-size: 30px;
+    color: #0094aa;
+}
+
+.toogle .icon.min {
+    display: none;
+}
+
+.toogle.active .icon.min {
+    display: block;
+}
+
+.toogle.active .icon.max {
+    display: none;
+}
+
+.exp {
+    overflow: hidden;
+    height: auto;
+    transition: .5s all;
+}
+.exp.heightCero {
+    height: 0;
 }
