@@ -568,6 +568,10 @@ p.article-paragraph {
     .puntos {
         display: none;
     }
+
+    .mb-150 {
+        margin-bottom: 40px !important;
+    }
 }
 
 .cont-form {
@@ -889,6 +893,7 @@ ul.round-padding {
     border-radius: 22px;
     margin-bottom: 15px;
     position: relative;
+    cursor : pointer;
 }
 
 .toogle h3 {
@@ -917,6 +922,16 @@ ul.round-padding {
     display: none;
 }
 
+.toogle:hover {
+    background: #0094aa;
+}
+.toogle:hover h3{
+    color: #fff
+}
+
+.toogle:hover .icon{
+    color: #fff
+}
 .exp {
     overflow: hidden;
     height: auto;
