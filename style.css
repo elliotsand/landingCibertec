@@ -180,6 +180,7 @@ nav li {
     padding: 0;
     border: none;
     cursor: pointer;
+    display: block;
     border-radius: 30px;
 }
 
