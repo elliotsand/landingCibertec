@@ -590,6 +590,7 @@ p.article-paragraph {
     }
 
     .mb-150 {
+        margin-top: 10px !important;
         margin-bottom: 40px !important;
     }
 }
