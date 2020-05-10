@@ -821,6 +821,9 @@ fieldset input::-webkit-input-placeholder {
     .mobile-mb-25 {
         margin-bottom: 25px;
     }
+    .mobile-mb-10 {
+        margin-bottom: 10px;
+    }
 
     .forma-1 {
         display: none;
@@ -851,7 +854,7 @@ fieldset input::-webkit-input-placeholder {
 
     .testimonio img {
         display: block;
-        margin: auto;
+        margin: 0 auto 40px;
         max-width: 70%;
     }
 
